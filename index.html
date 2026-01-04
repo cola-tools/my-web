@@ -10,7 +10,14 @@
  
     <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
     <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
-    <link rel="icon" href="./favicon.ico">
+    <!-- 核心：添加标签图标（多种格式兼容，确保所有浏览器生效） -->
+    <!-- 1. 基础favicon.ico（兼容绝大多数浏览器，包括旧版） -->
+    <link rel="icon" href="./image/1.ico" type="image/x-icon">
+    <!-- 2. 现代浏览器支持的PNG格式（高分辨率，显示更清晰） -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- 3. Apple设备（Safari/iOS）专用图标（可选，优化苹果设备显示） -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 </head>
 
 <body>
@@ -32,7 +39,8 @@
                 <ul class="ul">
                     <li>志同道合的朋友</li>
                     <li>可以交流技术的同好</li>
-                 </div>
+                </ul> <!-- 修复原代码未闭合的ul标签 -->
+            </div>
             <!-- 两个按钮 -->
             <div class="meBox-Button">
                 <a href="https://colatools.cn/" target="_blank">关于</a>
